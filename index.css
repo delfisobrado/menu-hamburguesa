@@ -1,0 +1,35 @@
+
+
+nav { display: flex;
+width: 100%;
+justify-content: flex-end;
+align-items: center;}
+
+li { list-style: none;;
+margin: 0px 10px;
+display: inline-block;}
+
+a { text-decoration: none;
+color: black; 
+font-weight: bold;
+font-size: 30px;}
+
+
+.icon-menu { font-size: 30px;
+    display: none!important}
+
+.Change { display: none;}
+
+@media screen and (max-width: 600px)  {
+    ul { display: none;}
+
+    .icon-menu {display: inline-block!important;}
+
+    .Change:checked ~ ul { display: inline-block!important;}
+    
+    li { flex-direction: column;
+   flex-wrap: wrap;}
+
+    
+}
+
